@@ -6,7 +6,8 @@ import {signIn, useSession, signOut} from "next-auth/react"
 
 export default function Home() {
   const session = useSession();
-  console.error(session)
+  console.log("Session,",session)
+  // console.error(session)
   return (
     <div style={{height: 60, background: "white", padding: 10}}>
       {session.data && <div style={{display: "flex", justifyContent: "space-between"}}>
